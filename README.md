@@ -20,3 +20,19 @@ $ git config --global color.diff.meta "blue black bold"/
 $ git config --global core.pager ''                    /
 /******************************************************/
 
+/************ To verify configurations i'll do ************/
+$ git config --list
+
+-1- To add a directory: 
+      $ git add index.php
+      /** Or to add all repositories
+      $ git add .
+
+-2- to commit changes:
+      $ git commit -m "messages of changes i've made"
+
+-3- To push code on the remote repository i'll do
+      * git remote add origin https://github.com/hermezdelay/premier_essai.git
+      * git branch -M main
+      * git push -u origin main
+
