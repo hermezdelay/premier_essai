@@ -24,7 +24,7 @@ $ git config --global core.pager ''                    /
 $ git config --list
 
 
--1- If the repository has been created on Github first, i've to load his content first (pull) to the local directory (**************important*************)
+-1- If the repository has been created on Github first, i've to load his content first (pull) to the local directory (/**************important*************/)
       $ git init      
       $ git remote add origin https://github.com/hermezdelay/premier_essai.git
       $ git pull origin main
