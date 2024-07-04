@@ -53,7 +53,7 @@ function validerNom(nom) {
 }
 
 /**
- * Cette fonction prend un email en paramètre et valide qu'il est au bon format. 
+ * Cette fonction prend un email en paramètre et valide qu'il est au bon format. modification spontanée
  * @param {string} email 
  * @throws {Error}
  */
