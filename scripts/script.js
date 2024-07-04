@@ -53,7 +53,7 @@ function validerNom(nom) {
 }
 
 /**
- * Cette fonction prend un email en paramètre et valide qu'il est au bon format. modification spontanée
+ * Cette fonction prend un email en paramètre et valide qu'il est au bon format. modification spontanée puisque github ne veut pas afficher
  * @param {string} email 
  * @throws {Error}
  */
