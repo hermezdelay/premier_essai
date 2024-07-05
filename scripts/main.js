@@ -8,8 +8,17 @@
 let question1 = document.getElementById("nom")
 console.log(question1)
 
+let question2 = document.getElementById("btnValiderMot")
+question2.addEventListener("click", (event) => {
+    console.log(event)
+})
 
 
+let question3 = document.getElementById("inputEcriture")
+question3.addEventListener('keydown', (event) => {
+    console.log(event)
+
+})
 
 
 
