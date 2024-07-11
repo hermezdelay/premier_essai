@@ -50,3 +50,46 @@ function initAddEventListenerPopup() {
         }
     })
 }
+
+function validerNomChange(){
+    let nom = document.getElementById("nom")
+    nom.addEventListener('change', (event) => {
+        if( (event.target.value.length > 2) && (event.target.value != "tappez ici votre nom !") && (event.target.value != "")){
+            console.log(`changement de balise ${event.target.value} `)
+            return true
+        }
+        else{
+            nom.classList.add("error")
+            console.log("erreur de nom ")
+            return false
+        }
+    })
+}
+
+function validerNom(){
+    let nom = document.getElementById("nom")
+        if( (nom.value.length > 2) && (nom.value != "tappez ici votre nom !") && (nom.value != "")){
+            console.log(`changement de balise ${nom.value} `)
+            return true
+        }
+        else{
+            //nom.classList.add("error")
+            console.log("erreur de nom ")
+            return false
+        }
+}
+
+function validerEmail(){
+    let email = document.getElementById("email")
+    let regex = new RegExp('[a-z0-9._-]+@[a-z0-9._-]+\\.[a-z0-9._-]+')
+    let regex_email = regex.test(email.value)
+    if( (email.value.length > 2) && (email.value != "tappez ici votre nom !") && (email.value != "" )&& regex_email){
+            console.log(`changement de balise ${email.value} `)
+            return true
+        }
+        else{
+            //email.classList.add("error")
+            console.log("erreur de nom ")
+            return false
+        }
+}

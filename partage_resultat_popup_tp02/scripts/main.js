@@ -54,3 +54,16 @@ mot.innerText = `salam`
 
 change_radio(radio,mot)
 initAddEventListenerPopup()
+
+let btnEnvoyerMail = document.getElementById("btnEnvoyerMail") 
+btnEnvoyerMail.addEventListener('click', (event) => {
+    event.preventDefault()
+    nom_popup = validerNom()
+    emeil_popup = validerEmail()
+    if(nom_popup && emeil_popup){
+        alert(`bon travail nom = ${nom_popup} et email = ${emeil_popup}`)
+    }
+    else{
+        alert(`refaire le travail nom = ${nom_popup} et email = ${emeil_popup}`)
+    }
+})
